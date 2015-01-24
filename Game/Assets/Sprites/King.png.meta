@@ -1,17 +1,12 @@
 fileFormatVersion: 2
-guid: bd83c2362fa75b74998ba6e8e6076959
+guid: b7ee3b563761ec6499a96c085cf6eb0c
 TextureImporter:
   fileIDToRecycleName:
-    21300000: char2_0
-    21300002: char2_1
-    21300004: char2_2
-    21300006: char2_3
-    21300008: char2_4
-    21300010: MainCharacter_0
-    21300012: MainCharacter_1
-    21300014: MainCharacter_2
-    21300016: MainCharacter_3
-    21300018: MainCharacter_4
+    21300000: King_0
+    21300002: King_1
+    21300004: King_2
+    21300006: King_3
+    21300008: King_4
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -53,53 +48,53 @@ TextureImporter:
   buildTargetSettings: []
   spriteSheet:
     sprites:
-    - name: MainCharacter_0
+    - name: King_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 23
-        width: 98
-        height: 178
+        x: 79
+        y: 267
+        width: 40
+        height: 41
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: MainCharacter_1
+    - name: King_1
       rect:
         serializedVersion: 2
-        x: 100
-        y: 22
-        width: 96
-        height: 181
+        x: 243
+        y: 204
+        width: 116
+        height: 195
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: MainCharacter_2
+    - name: King_2
       rect:
         serializedVersion: 2
-        x: 203
-        y: 13
-        width: 96
-        height: 178
+        x: 36
+        y: 14
+        width: 153
+        height: 171
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: MainCharacter_3
+    - name: King_3
       rect:
         serializedVersion: 2
-        x: 300
-        y: 29
-        width: 96
-        height: 174
+        x: 236
+        y: 12
+        width: 153
+        height: 171
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: MainCharacter_4
+    - name: King_4
       rect:
         serializedVersion: 2
-        x: 403
-        y: 13
-        width: 96
-        height: 178
+        x: 436
+        y: 12
+        width: 153
+        height: 171
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
