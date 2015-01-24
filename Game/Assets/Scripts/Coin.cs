@@ -7,7 +7,7 @@ public class Coin : MonoBehaviour
 
 	void Update()
 	{
-		transform.position += Speed*Time.deltaTime * Vector3.left;
+		//transform.position += Speed*Time.deltaTime * Vector3.left;
 	}
 
 	void OnTriggerEnter2D(Collider2D other)
@@ -16,8 +16,9 @@ public class Coin : MonoBehaviour
 		{
 			GetComponent<AudioSource>().Play();
 			CoinManager.Instance.AddCoins(1);
+			Destroy(gameObject);
 		}
 
-		transform.position = new Vector3(Random.Range(10f, 20f), Random.Range(-3f, 3f), other.transform.position.z);
+		//transform.position = new Vector3(Random.Range(10f, 20f), Random.Range(-3f, 3f), other.transform.position.z);
 	}
 }
