@@ -7,6 +7,11 @@ TextureImporter:
     21300004: backit_2
     21300006: backit_3
     21300008: backit_4
+    21300010: FieldItems_0
+    21300012: FieldItems_1
+    21300014: FieldItems_2
+    21300016: FieldItems_3
+    21300018: FieldItems_4
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -48,7 +53,7 @@ TextureImporter:
   buildTargetSettings: []
   spriteSheet:
     sprites:
-    - name: backit_0
+    - name: FieldItems_0
       rect:
         serializedVersion: 2
         x: 29
@@ -58,7 +63,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: backit_1
+    - name: FieldItems_1
       rect:
         serializedVersion: 2
         x: 135
@@ -68,7 +73,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: backit_2
+    - name: FieldItems_2
       rect:
         serializedVersion: 2
         x: 232
@@ -78,7 +83,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: backit_3
+    - name: FieldItems_3
       rect:
         serializedVersion: 2
         x: 329
@@ -88,7 +93,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: backit_4
+    - name: FieldItems_4
       rect:
         serializedVersion: 2
         x: 0

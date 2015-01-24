@@ -8,10 +8,13 @@ public class CharacterRunner : MonoBehaviour
 {
 	private Rigidbody2D _rigidbody2D = null;
 	private Animator _animator = null;
+	private float _grounded = 0.0f;
 
 	private bool _mirrored = false;
 
 	public float Speed = 10.0f;
+	public float JumpForce = 100.0f;
+	public float JumpMaxPressTime = 0.3f;
 
 	// Use this for initialization
 	void Start ()
@@ -23,25 +26,41 @@ public class CharacterRunner : MonoBehaviour
 	}
 	
 	// Update is called once per frame
-	void Update () 
+	void FixedUpdate () 
 	{
-		var movement = new Vector3(Input.GetAxis("Horizontal"), 0.0f, 0.0f);
+		var movement = Input.GetAxis("Horizontal");
 
-		_mirrored = movement.x < 0;
+		_mirrored = movement < 0;
 
 
 		if (_mirrored && transform.localScale.x > 0) transform.localScale = new Vector3(transform.localScale.x * -1, transform.localScale.y, transform.localScale.z);
 		if (!_mirrored && transform.localScale.x < 0) transform.localScale = new Vector3(transform.localScale.x * -1, transform.localScale.y, transform.localScale.z);
 
-		var deltaMovement = (movement*Time.deltaTime*Speed);
+		var jumpSpeed = _rigidbody2D.velocity.y;
 
-		_rigidbody2D.MovePosition(transform.position + deltaMovement);
+		if (_grounded < JumpMaxPressTime)
+		{
+			if (Input.GetButton("Jump"))
+			{
+				jumpSpeed = JumpForce;
+				_grounded += Time.fixedDeltaTime;
+			}
+			else if(_grounded > 0.01f)
+			{
+				_grounded = JumpMaxPressTime;
+			}
+		}
 
-		
+		_rigidbody2D.velocity = new Vector2(movement * Speed, jumpSpeed);
 	}
 
 	void OnCollisionEnter2D(Collision2D collision)
 	{
-		_rigidbody2D.gravityScale = 0;
+		if(collision.transform.tag == "Ground")
+			_grounded = 0.0f;
+		else
+		{
+			print("Error Collision.");
+		}
 	}
 }
