@@ -6,8 +6,11 @@ using System.Collections;
 [RequireComponent(typeof(Animator))]
 public class CharacterMovement : MonoBehaviour
 {
-	private Rigidbody2D _rigidbody2D = null;
+
+    private Rigidbody2D _rigidbody2D = null;
 	private Animator _animator = null;
+
+    //private Vector2 posicaoanterior;
 
 	private bool _mirrored = false;
 
@@ -36,5 +39,18 @@ public class CharacterMovement : MonoBehaviour
 		_rigidbody2D.MovePosition(transform.position + deltaMovement);
 
 		_animator.SetFloat("Speed", deltaMovement.sqrMagnitude * 100.0f);
-	}
+
+    }
+
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        //Destroy(other.gameObject);
+
+        Speed = Speed * -1;
+        
+        Debug.Log("deu");
+
+        //rigidbody2D.AddForce(Vector2.up) ;
+        //Speed = 10;
+    }
 }
