@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\CharacterMovement.cs" />
+     <Compile Include="Assets\Scripts\CharacterRunner.cs" />
      <Compile Include="Assets\Scripts\RepeatingBackground.cs" />
      <Compile Include="Assets\Scripts\Teleport.cs" />
      <Compile Include="Assets\Scripts\UI\TitleEvents.cs" />
