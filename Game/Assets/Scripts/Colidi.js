@@ -26,7 +26,7 @@
         } 
 	}
 
-    function OnTriggerEnter2D (Collider2D other)
+    function OnTriggerEnter2D (Collider2D)
     {
         //Destroy(other.gameObject);
         //gameObject.;
