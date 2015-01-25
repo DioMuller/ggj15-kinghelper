@@ -19,3 +19,15 @@ EditorBuildSettings:
     path: Assets/Scenes/GameEnding.unity
   - enabled: 1
     path: Assets/Scenes/GameOver.unity
+  - enabled: 1
+    path: Assets/Scenes/Level02/FakeLoading02.unity
+  - enabled: 1
+    path: Assets/Scenes/Level02/Level02.unity
+  - enabled: 1
+    path: Assets/Scenes/Level02/Objective02.unity
+  - enabled: 1
+    path: Assets/Scenes/Level03/FakeLoading03.unity
+  - enabled: 1
+    path: Assets/Scenes/Level03/Level03.unity
+  - enabled: 1
+    path: Assets/Scenes/Level03/Objective03.unity

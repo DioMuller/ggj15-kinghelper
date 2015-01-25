@@ -8,6 +8,8 @@ public class CoinManager : MonoBehaviour
 	public static CoinManager Instance { get; private set; }
 
 	public Text Label;
+	public string NextScene;
+	public int MaxValue = 8;
 
 	public int Coins { get; private set; }
 
@@ -18,11 +20,11 @@ public class CoinManager : MonoBehaviour
 
 	void Update()
 	{
-		Label.text = Coins + "/8";
+		Label.text = Coins + "/" + MaxValue;
 
-		if (Coins >= 8)
+		if (Coins >= MaxValue)
 		{
-			Application.LoadLevel("GameEnding");
+			Application.LoadLevel(NextScene);
 		}
 	}
 
