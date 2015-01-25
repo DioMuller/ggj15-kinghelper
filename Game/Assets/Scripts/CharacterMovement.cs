@@ -10,6 +10,9 @@ public class CharacterMovement : MonoBehaviour
     private Rigidbody2D _rigidbody2D = null;
 	private Animator _animator = null;
 
+	public int Health = 3;
+	private bool _invunerable = false;
+
     //private Vector2 posicaoanterior;
 
 	private bool _mirrored = false;
@@ -44,9 +47,29 @@ public class CharacterMovement : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
+	    if (other.tag == "Enemy" && !_invunerable)
+	    {
+		    Health--;
+		    StartCoroutine(Blink());
+	    }
         //Destroy(other.gameObject);
 	    //Speed = Speed * -1;
 	    //rigidbody2D.AddForce(Vector2.up) ;
 	    //Speed = 10;
     }
+
+	IEnumerator Blink()
+	{
+		_invunerable = true;
+		InvokeRepeating("DoBlink", 0.0f, 0.3f);
+		yield return new WaitForSeconds(3.0f);
+		_invunerable = false;
+		CancelInvoke("DoBlink");
+		transform.renderer.enabled = true;
+	}
+
+	void DoBlink()
+	{
+		transform.renderer.enabled = !transform.renderer.enabled;
+	}
 }
