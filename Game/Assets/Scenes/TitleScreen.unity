@@ -182,7 +182,7 @@ MonoBehaviour:
   m_VerticalAxis: Vertical
   m_SubmitButton: Submit
   m_CancelButton: Cancel
-  m_InputActionsPerSecond: 10
+  m_InputActionsPerSecond: 3
   m_AllowActivationOnMobileDevice: 0
 --- !u!114 &273005568
 MonoBehaviour:
@@ -1155,7 +1155,7 @@ MonoBehaviour:
     m_HighlightedTrigger: Highlighted
     m_PressedTrigger: Pressed
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 1249428716}
   m_OnClick:
     m_PersistentCalls:
@@ -1679,8 +1679,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MainCanvas: {fileID: 1801117799}
   CreditsCanvas: {fileID: 430421036}
-  GameSceneName: GameStart
+  GameSceneName: Objective01
   QuickGameSceneName: Prisioners
+  System: {fileID: 273005568}
+  TitleButtons:
+  - {fileID: 746635376}
+  - {fileID: 531091898}
+  CreditsButtons:
+  - {fileID: 1249428715}
 --- !u!4 &2044400699
 Transform:
   m_ObjectHideFlags: 0

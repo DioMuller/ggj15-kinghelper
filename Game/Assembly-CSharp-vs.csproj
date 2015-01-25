@@ -56,7 +56,7 @@
      <Compile Include="Assets\Scripts\PrisionersEscaped.cs" />
      <Compile Include="Assets\Scripts\RepeatingBackground.cs" />
      <Compile Include="Assets\Scripts\Teleport.cs" />
-     <Compile Include="Assets\Scripts\UI\TitleEvents.cs" />
+     <Compile Include="Assets\Scripts\TitleEvents.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.1/UnityEngine.UI.dll</HintPath>
  </Reference>
