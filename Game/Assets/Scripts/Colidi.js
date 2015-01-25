@@ -1,10 +1,11 @@
 #pragma strict
 
-    var direcao = 1;
+	var direcao = 1;
+	var _initialRotation : Quaternion;
 
 	// Use this for initialization
 	function Start () {
-	
+		_initialRotation = transform.rotation;
 	}
 	
 	// Update is called once per frame
@@ -23,7 +24,9 @@
         } 
         if (transform.position.x < -22){
             transform.position.x = transform.position.x + 0.02 * direcao * -1;   
-        } 
+        }
+
+		transform.rotation = _initialRotation;
 	}
 
     function OnTriggerEnter2D (Collider2D)
