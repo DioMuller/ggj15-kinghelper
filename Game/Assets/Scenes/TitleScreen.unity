@@ -1116,7 +1116,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MainCanvas: {fileID: 1801117799}
   CreditsCanvas: {fileID: 430421036}
-  GameSceneName: MainGame
+  GameSceneName: GameStart
 --- !u!4 &2044400699
 Transform:
   m_ObjectHideFlags: 0

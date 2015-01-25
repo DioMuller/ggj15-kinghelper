@@ -19,6 +19,11 @@ public class CoinManager : MonoBehaviour
 	void Update()
 	{
 		Label.text = Coins + "/8";
+
+		if (Coins >= 8)
+		{
+			Application.LoadLevel("GameEnding");
+		}
 	}
 
 	public void AddCoins(int coins)
