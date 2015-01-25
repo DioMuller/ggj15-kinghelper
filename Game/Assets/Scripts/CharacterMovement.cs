@@ -29,6 +29,9 @@ public class CharacterMovement : MonoBehaviour
 	// Update is called once per frame
 	void Update () 
 	{
+
+		if(Health <= 0) Application.LoadLevel("GameOver");
+
 		var movement = new Vector3(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"), 0.0f);
 
 		_mirrored = movement.x < 0;
