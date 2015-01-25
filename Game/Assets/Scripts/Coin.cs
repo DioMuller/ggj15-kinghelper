@@ -14,11 +14,17 @@ public class Coin : MonoBehaviour
 	{
 		if (other.tag == "Player")
 		{
-			GetComponent<AudioSource>().Play();
-			CoinManager.Instance.AddCoins(1);
-			Destroy(gameObject);
+			StartCoroutine(DestroyCoin());
 		}
 
 		//transform.position = new Vector3(Random.Range(10f, 20f), Random.Range(-3f, 3f), other.transform.position.z);
+	}
+
+	IEnumerator DestroyCoin()
+	{
+		audio.Play();
+		yield return new WaitForSeconds(0.1f);
+		CoinManager.Instance.AddCoins(1);
+		Destroy(gameObject);
 	}
 }
