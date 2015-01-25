@@ -53,6 +53,7 @@
      <Compile Include="Assets\Scripts\Dialog.cs" />
      <Compile Include="Assets\Scripts\FakeLoading.cs" />
      <Compile Include="Assets\Scripts\LifeUI.cs" />
+     <Compile Include="Assets\Scripts\PrisionersEscaped.cs" />
      <Compile Include="Assets\Scripts\RepeatingBackground.cs" />
      <Compile Include="Assets\Scripts\Teleport.cs" />
      <Compile Include="Assets\Scripts\UI\TitleEvents.cs" />

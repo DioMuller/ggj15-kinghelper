@@ -53,6 +53,8 @@ public class CharacterMovement : MonoBehaviour
 	    if (other.tag == "Enemy" && !_invunerable)
 	    {
 		    Health--;
+			audio.Play();
+			Destroy(other.gameObject);
 		    StartCoroutine(Blink());
 	    }
         //Destroy(other.gameObject);
