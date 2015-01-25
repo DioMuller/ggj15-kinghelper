@@ -64,8 +64,8 @@ public class CharacterMovement : MonoBehaviour
 	IEnumerator Blink()
 	{
 		_invunerable = true;
-		InvokeRepeating("DoBlink", 0.0f, 0.3f);
-		yield return new WaitForSeconds(3.0f);
+		InvokeRepeating("DoBlink", 0.0f, 0.2f);
+		yield return new WaitForSeconds(1.0f);
 		_invunerable = false;
 		CancelInvoke("DoBlink");
 		transform.renderer.enabled = true;
