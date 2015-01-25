@@ -3168,7 +3168,8 @@ Prefab:
       value: 
       objectReference: {fileID: 21300000, guid: b7ee3b563761ec6499a96c085cf6eb0c,
         type: 3}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 9505012, guid: a7b39eb91c718e44aaae57ada9ef4767, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: a7b39eb91c718e44aaae57ada9ef4767, type: 2}
   m_RootGameObject: {fileID: 1944779875}
   m_IsPrefabParent: 0
@@ -8728,7 +8729,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 1944779876}
   - 212: {fileID: 1944779881}
-  - 95: {fileID: 1944779880}
   - 114: {fileID: 1944779879}
   - 61: {fileID: 1944779878}
   - 82: {fileID: 1944779877}
@@ -8836,22 +8836,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Speed: 10
---- !u!95 &1944779880
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 9505012, guid: a7b39eb91c718e44aaae57ada9ef4767,
-    type: 2}
-  m_PrefabInternal: {fileID: 681647769}
-  m_GameObject: {fileID: 1944779875}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: a1215aa785814e34bac3ee187a987ee2, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 1
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
 --- !u!212 &1944779881
 SpriteRenderer:
   m_ObjectHideFlags: 0

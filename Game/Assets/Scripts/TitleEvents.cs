@@ -8,7 +8,6 @@ public class TitleEvents : MonoBehaviour
 	public Canvas MainCanvas = null;
 	public Canvas CreditsCanvas = null;
 	public string GameSceneName = "";
-	public string QuickGameSceneName = "";
 
 	public EventSystem System;
 
@@ -20,9 +19,9 @@ public class TitleEvents : MonoBehaviour
 		Application.LoadLevel(GameSceneName);
 	}
 
-	public void OnQuickStartClick()
+	public void OnQuit()
 	{
-		Application.LoadLevel(QuickGameSceneName);
+		Application.Quit();
 	}
 
 	public void OnCreditsClick()
