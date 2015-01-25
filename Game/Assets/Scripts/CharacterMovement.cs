@@ -45,12 +45,8 @@ public class CharacterMovement : MonoBehaviour
     void OnTriggerEnter2D(Collider2D other)
     {
         //Destroy(other.gameObject);
-
-        Speed = Speed * -1;
-        
-        Debug.Log("deu");
-
-        //rigidbody2D.AddForce(Vector2.up) ;
-        //Speed = 10;
+	    //Speed = Speed * -1;
+	    //rigidbody2D.AddForce(Vector2.up) ;
+	    //Speed = 10;
     }
 }

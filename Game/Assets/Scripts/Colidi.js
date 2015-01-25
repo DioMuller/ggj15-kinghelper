@@ -1,4 +1,4 @@
-﻿#pragma strict
+#pragma strict
 
     var direcao = 1;
 
@@ -30,7 +30,6 @@
     {
         //Destroy(other.gameObject);
         //gameObject.;
-        Debug.Log ("deu");
         direcao = direcao * -1;
         transform.rotation.x = transform.rotation.x * -1;
     }
