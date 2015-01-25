@@ -36,7 +36,7 @@ public class Dialog : MonoBehaviour
 	{
 		_current++;
 
-		if (_current > Text.Length)
+		if (_current >= Text.Length)
 		{
 			Application.LoadLevel(NextLevel);
 		}
